@@ -1,4 +1,4 @@
-package com.crazyrockgames.galleryinst.adapter
+package com.crazyrockgames.instviewgallery.adapter
 
 import android.content.Context
 import android.net.Uri
@@ -12,8 +12,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.crazyrockgames.galleryinst.R
-import com.crazyrockgames.galleryinst.interfaces.OnItemLongClickListener
+import com.crazyrockgames.instviewgallery.R
+import com.crazyrockgames.instviewgallery.interfaces.OnItemLongClickListener
 import com.luck.picture.lib.config.PictureMimeType
 import com.luck.picture.lib.entity.LocalMedia
 import com.luck.picture.lib.listener.OnItemClickListener

@@ -1,7 +1,7 @@
-package com.crazyrockgames.galleryinst.utils
+package com.crazyrockgames.instviewgallery.utils
 
 import android.content.Context
-import com.crazyrockgames.galleryinst.interfaces.ImageCacheUtils
+import com.crazyrockgames.instviewgallery.interfaces.ImageCacheUtils
 import com.luck.picture.lib.engine.CacheResourcesEngine
 import java.io.File
 

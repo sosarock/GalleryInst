@@ -1,4 +1,4 @@
-package com.crazyrockgames.galleryinst.interfaces
+package com.crazyrockgames.instviewgallery.interfaces
 
 /**
  * @author：Sosa_Omar

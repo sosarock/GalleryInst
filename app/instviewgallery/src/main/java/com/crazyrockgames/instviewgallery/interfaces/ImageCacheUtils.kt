@@ -1,8 +1,8 @@
-package com.crazyrockgames.galleryinst.interfaces
+package com.crazyrockgames.instviewgallery.interfaces
 
 import android.content.Context
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.target.Target
+import com.bumptech.glide.request.target.Target.SIZE_ORIGINAL
 import java.io.File
 import java.lang.Exception
 
@@ -40,7 +40,7 @@ object ImageCacheUtils {
      */
     fun getCacheFileTo3x(context: Context?, url: String?): File? {
         return try {
-            Glide.with(context!!).load(url).downloadOnly(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
+            Glide.with(context!!).load(url).downloadOnly(SIZE_ORIGINAL, SIZE_ORIGINAL)
                 .get()
         } catch (e: Exception) {
             e.printStackTrace()

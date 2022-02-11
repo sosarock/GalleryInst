@@ -15,10 +15,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.crazyrockgames.galleryinst.adapter.GridImageAdapter
-import com.crazyrockgames.galleryinst.interfaces.DragListener
-import com.crazyrockgames.galleryinst.utils.GlideCacheEngine
-import com.crazyrockgames.galleryinst.utils.GlideEngine
+import com.crazyrockgames.instviewgallery.adapter.GridImageAdapter
+import com.crazyrockgames.instviewgallery.interfaces.DragListener
+import com.crazyrockgames.instviewgallery.utils.GlideCacheEngine
+import com.crazyrockgames.instviewgallery.utils.GlideEngine
 import com.luck.picture.lib.PictureSelector
 import com.luck.picture.lib.broadcast.BroadcastAction
 import com.luck.picture.lib.broadcast.BroadcastManager
@@ -28,6 +28,7 @@ import com.luck.picture.lib.instagram.InsGallery
 import com.luck.picture.lib.permissions.PermissionChecker
 import com.luck.picture.lib.tools.PictureFileUtils
 import com.luck.picture.lib.tools.ToastUtils
+
 import java.util.*
 
 class GalleryInstActivity : AppCompatActivity() {

@@ -1,7 +1,7 @@
-package com.crazyrockgames.galleryinst.utils
+package com.crazyrockgames.instviewgallery.utils
 
 import android.util.Log
-import com.crazyrockgames.galleryinst.utils.GlideEngine.Companion.createGlideEngine
+import com.crazyrockgames.instviewgallery.utils.GlideEngine.Companion.createGlideEngine
 import com.luck.picture.lib.engine.ImageEngine
 import com.luck.picture.lib.engine.PictureSelectorEngine
 import com.luck.picture.lib.entity.LocalMedia

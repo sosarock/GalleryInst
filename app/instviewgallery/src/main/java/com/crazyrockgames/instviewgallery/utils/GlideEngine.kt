@@ -1,4 +1,4 @@
-package com.crazyrockgames.galleryinst.utils
+package com.crazyrockgames.instviewgallery.utils
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -8,16 +8,15 @@ import android.view.View
 import android.widget.ImageView
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 import com.bumptech.glide.request.target.ImageViewTarget
-import com.luck.picture.lib.R
 import com.luck.picture.lib.engine.ImageEngine
 import com.luck.picture.lib.listener.OnImageCompleteCallback
 import com.luck.picture.lib.tools.MediaUtils
 import com.luck.picture.lib.widget.longimage.ImageSource
 import com.luck.picture.lib.widget.longimage.ImageViewState
 import com.luck.picture.lib.widget.longimage.SubsamplingScaleImageView
+
 
 /**
  * @author：Sosa_Omar
@@ -160,7 +159,10 @@ class GlideEngine private constructor() : ImageEngine {
             .override(180, 180)
             .centerCrop()
             .sizeMultiplier(0.5f)
-            .apply(RequestOptions().placeholder(R.drawable.picture_image_placeholder))
+            .apply(
+                com.bumptech.glide.request.RequestOptions()
+                    .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
+            )
             .into(object : BitmapImageViewTarget(imageView) {
                 override fun setResource(resource: Bitmap?) {
                     val circularBitmapDrawable =
@@ -200,7 +202,10 @@ class GlideEngine private constructor() : ImageEngine {
             .load(url)
             .override(200, 200)
             .centerCrop()
-            .apply(RequestOptions().placeholder(R.drawable.picture_image_placeholder))
+            .apply(
+                com.bumptech.glide.request.RequestOptions()
+                    .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
+            )
             .into(imageView)
     }
 

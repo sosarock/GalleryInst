@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.camera.camera2.Camera2Config
 import androidx.camera.core.CameraXConfig
-import com.crazyrockgames.galleryinst.utils.PictureSelectorEngineImp
+import com.crazyrockgames.instviewgallery.utils.PictureSelectorEngineImp
 import com.luck.picture.lib.app.IApp
 import com.luck.picture.lib.app.PictureAppMaster
 import com.luck.picture.lib.crash.PictureSelectorCrashUtils
